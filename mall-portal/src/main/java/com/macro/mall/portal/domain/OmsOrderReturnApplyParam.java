@@ -1,8 +1,8 @@
 package com.macro.mall.portal.domain;
 
 import io.swagger.annotations.ApiModelProperty;
-import lombok.Getter;
-import lombok.Setter;
+
+
 
 import java.math.BigDecimal;
 
@@ -10,8 +10,6 @@ import java.math.BigDecimal;
  * 申请退货参数
  * Created by macro on 2018/10/17.
  */
-@Getter
-@Setter
 public class OmsOrderReturnApplyParam {
     @ApiModelProperty("订单id")
     private Long orderId;
@@ -46,4 +44,131 @@ public class OmsOrderReturnApplyParam {
     @ApiModelProperty("凭证图片，以逗号隔开")
     private String proofPics;
 
+    public Long getOrderId() {
+        return orderId;
+    }
+
+    public void setOrderId(Long orderId) {
+        this.orderId = orderId;
+    }
+
+    public Long getProductId() {
+        return productId;
+    }
+
+    public void setProductId(Long productId) {
+        this.productId = productId;
+    }
+
+    public String getOrderSn() {
+        return orderSn;
+    }
+
+    public void setOrderSn(String orderSn) {
+        this.orderSn = orderSn;
+    }
+
+    public String getMemberUsername() {
+        return memberUsername;
+    }
+
+    public void setMemberUsername(String memberUsername) {
+        this.memberUsername = memberUsername;
+    }
+
+    public String getReturnName() {
+        return returnName;
+    }
+
+    public void setReturnName(String returnName) {
+        this.returnName = returnName;
+    }
+
+    public String getReturnPhone() {
+        return returnPhone;
+    }
+
+    public void setReturnPhone(String returnPhone) {
+        this.returnPhone = returnPhone;
+    }
+
+    public String getProductPic() {
+        return productPic;
+    }
+
+    public void setProductPic(String productPic) {
+        this.productPic = productPic;
+    }
+
+    public String getProductName() {
+        return productName;
+    }
+
+    public void setProductName(String productName) {
+        this.productName = productName;
+    }
+
+    public String getProductBrand() {
+        return productBrand;
+    }
+
+    public void setProductBrand(String productBrand) {
+        this.productBrand = productBrand;
+    }
+
+    public String getProductAttr() {
+        return productAttr;
+    }
+
+    public void setProductAttr(String productAttr) {
+        this.productAttr = productAttr;
+    }
+
+    public Integer getProductCount() {
+        return productCount;
+    }
+
+    public void setProductCount(Integer productCount) {
+        this.productCount = productCount;
+    }
+
+    public BigDecimal getProductPrice() {
+        return productPrice;
+    }
+
+    public void setProductPrice(BigDecimal productPrice) {
+        this.productPrice = productPrice;
+    }
+
+    public BigDecimal getProductRealPrice() {
+        return productRealPrice;
+    }
+
+    public void setProductRealPrice(BigDecimal productRealPrice) {
+        this.productRealPrice = productRealPrice;
+    }
+
+    public String getReason() {
+        return reason;
+    }
+
+    public void setReason(String reason) {
+        this.reason = reason;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getProofPics() {
+        return proofPics;
+    }
+
+    public void setProofPics(String proofPics) {
+        this.proofPics = proofPics;
+    }
 }
